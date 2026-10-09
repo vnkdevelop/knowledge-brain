@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian runtime & cache
+.obsidian/workspace*
+.obsidian/cache*
+
+# Prepass manifests & temporary indices
+manifest.json
+vault_index.json
+raw_dump.json
