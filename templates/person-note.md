@@ -13,18 +13,18 @@ created: {{date:YYYY-MM-DD}}
 
 # 👤 {{person_name}}
 
-## 📌 Краткий профиль
-> [!abstract] Кто это
-> {{Специализация, исторический период, научная школа или контекст упоминания автором}}
+## 📌 Profile Summary
+> [!abstract] Overview
+> {{Specialization, historical era, academic tradition, or context of the author's reference}}
 
-## 💡 Ключевые идеи и вклад
-- [[{{Core_Concept_1}}]] — {{Краткая суть идеи}}
-- [[{{Core_Concept_2}}]] — {{Краткая суть идеи}}
+## 💡 Key Contributions & Core Ideas
+- [[{{Core_Concept_1}}]] — {{Brief essence}}
+- [[{{Core_Concept_2}}]] — {{Brief essence}}
 
-## 📝 Отношение автора к фигуре
-> [!quote] Цитата из конспекта
-> "{{Мысль автора о взглядах или работе персоны}}" — *{{source_file}}*
+## 📝 Author's Perspective
+> [!quote] Source Note
+> "{{Author's thought regarding this figure's theories or work}}" — *{{source_file}}*
 
-## 🧠 Дополнение Архитектора
-> [!ai-insight] Историко-научный контекст
-> {{Критическая оценка, развитие идей персоны в современной науке или практике}}
+## 🧠 Architect's Context
+> [!ai-insight] Historical & Scientific Context
+> {{Critical evaluation, contemporary standing, and further developments of their work}}

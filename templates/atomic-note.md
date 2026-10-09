@@ -2,6 +2,8 @@
 id: {{date:YYYYMMDD-HHmm}}
 title: "{{title}}"
 type: {{type:concept|model|protocol|insight}}
+aliases:
+  - "{{alias_1}}"
 tags:
   - domain/{{domain}}
   - type/{{type}}
@@ -11,39 +13,40 @@ sources:
   - "{{source_file_or_notebook}}"
 ai_enriched: {{ai_enriched:true|false}}
 created: {{date:YYYY-MM-DD}}
+updated: {{date:YYYY-MM-DD}}
 ---
 
 # 🧠 {{title}}
 
-## 📌 Суть (Core Idea)
-> [!abstract] Краткий тезис
-> {{Квинтэссенция мысли автора в 1-2 емких предложениях}}
+## 📌 Core Idea
+> [!abstract] Key Takeaway
+> {{Concise essence of the author's thought in 1-2 sharp sentences}}
 
-## 📝 Разбор и фактура (Analysis)
-{{Основной текст заметки: либо восстановленный и очищенный конспект, либо синтез из нескольких фрагментов}}
+## 📝 Analysis & Primary Source
+{{Main body of the note: restored and normalized notes, or synthesis from multiple fragments}}
 
-> [!quote] Цитата / Фрагмент оригинала
-> "{{Дословная мысль из конспекта автора}}" — *Источник: {{source_reference}}*
+> [!quote] Original Quote / Excerpt
+> "{{Verbatim thought from the author's original source}}" — *Source: {{source_reference}}*
 
-## 🧠 Дополнение и Контекст (AI Enrichment)
-> [!ai-insight] Аналитика Архитектора
-> {{Пояснение неочевидных механизмов, формул, терминологического аппарата или исторического контекста}}
+## 🧠 AI Enrichment & Context
+> [!ai-insight] Architect's Analysis
+> {{Explanation of underlying mechanisms, formulas, technical definitions, or historical context}}
 
-> [!synthesis] Междисциплинарный синтез
-> {{Неочевидные параллели с другими дисциплинами, гипотезы и следствия}}
+> [!synthesis] Interdisciplinary Synthesis
+> {{Cross-domain parallels, implications, and non-obvious hypotheses}}
 
-## 🔗 Ассоциативные связи (Cross-Domain Links)
-- **Связанные концепты:** [[{{Related_Note_1}}]], [[{{Related_Note_2}}]]
-- **Аналогии в других сферах:** [[{{Cross_Domain_Concept}}]] (краткое пояснение сути изоморфизма)
-- **Входит в хаб:** [[MOC - {{Hub_Name}}]]
+## 🔗 Cross-Domain Links
+- **Related Concepts:** [[{{Related_Note_1}}]], [[{{Related_Note_2}}]]
+- **Cross-Domain Analogy:** [[{{Cross_Domain_Concept}}]] (brief explanation of the structural isomorphism)
+- **Hub:** [[MOC - {{Hub_Name}}]]
 
-## 📊 Визуализация
+## 📊 Visualization
 ```mermaid
 graph LR
-    A["{{Узел 1}}"] -->|{{связь}}| B["{{Узел 2}}"]
-    B --> C["{{Следствие}}"]
+    A["{{Node 1}}"] -->|{{relationship}}| B["{{Node 2}}"]
+    B --> C["{{Outcome}}"]
 ```
 
-> [!image-prompt] Опциональный промпт для иллюстрации (Midjourney / Flux)
+> [!image-prompt] Optional Visual Generation Prompt (Midjourney / Flux)
 > **Engine:** Midjourney v6 / Flux.1
 > **Prompt:** {{Detailed visual prompt in English, dark obsidian aesthetic, clean vector/blueprint diagram}} --ar 16:9

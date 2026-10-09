@@ -1,7 +1,10 @@
 ---
 id: 20261009-1430
-title: "Пластичность нейронных сетей (Био vs ИИ)"
+title: "Neural Network Plasticity (Bio vs AI)"
 type: concept
+aliases:
+  - "Synaptic Plasticity"
+  - "Biological Backpropagation"
 tags:
   - domain/neurobiology
   - domain/ai/deep-learning
@@ -9,47 +12,47 @@ tags:
   - status/evergreen
   - truth
 sources:
-  - "Тетрадь_Нейрофизиология_2018_стр12.jpg"
-  - "Заметка_LLM_Архитектура_2024.md"
+  - "Notebook_Neurophysiology_2018_p12.jpg"
+  - "Notes_LLM_Architecture_2024.md"
 ai_enriched: true
 created: 2026-10-09
+updated: 2026-10-09
 ---
 
-# 🧠 Пластичность нейронных сетей (Био vs ИИ)
+# 🧠 Neural Network Plasticity (Bio vs AI)
 
-## 📌 Суть (Core Idea)
-> [!abstract] Краткий тезис
-> Биологические синапсы перестраиваются локально под воздействием корреляции спайков и нейромедиаторов (STDP/Дофамин), тогда как в ИИ веса обновляются через расчет глобального градиента (Backpropagation).
+## 📌 Core Idea
+> [!abstract] Key Takeaway
+> Biological synapses adapt locally through spike correlation and neuromodulators (STDP/Dopamine), whereas artificial neural networks update weights via global backpropagation through a computation graph.
 
-## 📝 Разбор и фактура (Analysis)
-Биологический синапс изменяет силу связи на основе совместной активности пресинаптического и постсинаптического нейронов. Дофаминовый всплеск выступает в качестве биологического сигнала подкрепления (Reward Prediction Error).
+## 📝 Analysis & Primary Source
+Biological synapses modulate connection strength based on coordinated activity between pre- and post-synaptic neurons. Dopamine surges function as a reinforcement signal (Reward Prediction Error).
 
-> [!quote] Цитата из конспекта (2018 г.)
-> "Мозг меняет связи на основе ошибки. Синапс усиливается, если предсказание совпало с реальностью. Дофамин как reward." — *Тетрадь 2018, с. 12*
+> [!quote] Excerpt from 2018 Notebook
+> "The brain updates connections based on error. Synapse strengthens when prediction matches reality. Dopamine as reward." — *Notebook 2018, p. 12*
 
-## 🧠 Дополнение и Контекст (AI Enrichment)
-> [!ai-insight] Аналитика Архитектора
-> Описанный автором принцип соответствует **правилу Хебба** (*"Neurons that fire together, wire together"*). В глубоком обучении его функциональным аналогом является алгоритм обратного распространения ошибки, однако искусственные нейросети требуют глобального расчета частных производных через вычислительный граф. Мозг же функционирует на основе локальных правил пластичности (STDP), что дает колоссальный выигрыш в энергоэффективности (~20 Ватт против сотен киловатт у кластеров GPU).
+## 🧠 AI Enrichment & Context
+> [!ai-insight] Architect's Analysis
+> The author describes **Hebbian Learning** ("Neurons that fire together, wire together"). While functional analogies exist with backpropagation, biological systems rely on localized learning rules (STDP), achieving remarkable energy efficiency (~20 Watts compared to megawatts in GPU clusters).
 
-> [!synthesis] Междисциплинарный синтез
-> В конспектах 2018 года автор рассматривает дофамин как сигнал подкрепления, а в записях 2024 года — функцию потерь (Loss Function) в трансформерах. 
-> **Инсайт:** Loss Function можно трактовать как математический эквивалент гомеостатического «дискомфорта» биологической системы, минимизирующей энтропию по принципу свободной энергии Карла Фристона.
+> [!synthesis] Interdisciplinary Synthesis
+> Correlating the 2018 notes on dopamine with the 2024 notes on transformer loss functions: the loss function in deep learning is mathematically equivalent to homeostatic "discomfort" minimization under Karl Friston's Free Energy Principle.
 
-## 🔗 Ассоциативные связи (Cross-Domain Links)
-- **Связанные концепты:** [[Обучение Хебба]], [[Алгоритм обратного распространения ошибки]], [[Дофаминергическая система]]
-- **Аналогии в других сферах:** [[Рыночная адаптация в экономике]] (децентрализованная локальная реакция агентов без глобального планировщика)
-- **Входит в хаб:** [[MOC - Когнитивные системы и ИИ]]
+## 🔗 Cross-Domain Links
+- **Related Concepts:** [[Hebbian Learning]], [[Backpropagation Algorithm]], [[Dopaminergic System]]
+- **Cross-Domain Analogy:** [[Market Price Adaptation in Economics]] (decentralized local agent adaptation without a global coordinator)
+- **Hub:** [[MOC - Cognitive Systems and AI]]
 
-## 📊 Визуализация
+## 📊 Visualization
 ```mermaid
 graph LR
-    A["Hebbian Learning (Биология)"] -->|локальное правило| B["Синаптическая пластичность"]
-    C["Backpropagation (ИИ)"] -->|глобальный градиент| D["Loss Function"]
-    B -.->|функциональный изоморфизм| D
-    B --> E["Дофаминовый Reward"]
+    A["Hebbian Learning (Biology)"] -->|local rule| B["Synaptic Plasticity"]
+    C["Backpropagation (AI)"] -->|global gradient| D["Loss Function"]
+    B -.->|functional isomorphism| D
+    B --> E["Dopaminergic Reward"]
     D --> F["Gradient Descent"]
 ```
 
-> [!image-prompt] Иллюстрация концепта (Flux / Midjourney)
+> [!image-prompt] Concept Illustration (Flux / Midjourney)
 > **Engine:** Flux.1 Dev / Midjourney v6
 > **Prompt:** Scientific schematic diagram comparing biological synapse releasing dopamine with artificial neural network nodes receiving backpropagation gradients, split-view architectural layout, dark obsidian background, luminous cyan and amber pathways, technical typography, vector aesthetic, high clarity --ar 16:9

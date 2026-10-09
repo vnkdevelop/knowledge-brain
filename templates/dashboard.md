@@ -1,6 +1,6 @@
 ---
 id: {{date:YYYYMMDD-HHmm}}-DASHBOARD
-title: "Dashboard: Синхронизация хранилища {{date:YYYY-MM-DD}}"
+title: "Dashboard: Vault Synchronization {{date:YYYY-MM-DD}}"
 type: dashboard
 tags:
   - type/dashboard
@@ -8,57 +8,57 @@ tags:
 created: {{date:YYYY-MM-DD}}
 ---
 
-# 🏠 Dashboard: Синхронизация онтологии знаний
+# 🏠 Dashboard: Knowledge Ontology Synchronization
 
-> **Дата обработки:** {{date:YYYY-MM-DD HH:mm}}  
-> **Пакет входящих данных:** {{batch_name_or_source_folder}}
+> **Sync Timestamp:** {{date:YYYY-MM-DD HH:mm}}  
+> **Source Batch:** {{batch_name_or_source_folder}}
 
 ---
 
-## 📊 1. Сводка ингестии (Executive Summary)
+## 📊 1. Ingestion Summary (Executive Report)
 
-| Метрика | Значение |
+| Metric | Value |
 | :--- | :--- |
-| **Обработано файлов** | {{processed_files_count}} ({{images_count}} фото, {{notes_count}} заметок, {{code_count}} кода, {{audio_count}} аудио) |
-| **Создано атомарных заметок** | {{atomic_notes_count}} |
-| **Создано/обновлено MOC-хабов** | {{moc_count}} |
-| **Выявлено семян (Seed-заглушек)** | {{seed_count}} |
-| **Обнаружено противоречий** | {{contradictions_count}} |
+| **Processed Files** | {{processed_files_count}} ({{images_count}} images, {{notes_count}} notes, {{code_count}} code, {{audio_count}} audio) |
+| **Atomic Notes Created** | {{atomic_notes_count}} |
+| **MOC Hubs Created/Updated** | {{moc_count}} |
+| **Seed Stubs Identified** | {{seed_count}} |
+| **Contradictions Arbitrated** | {{contradictions_count}} |
 
 ---
 
-## 🗺️ 2. Матрица хабов (MOC Matrix)
+## 🗺️ 2. MOC Knowledge Matrix
 
-- [[MOC - {{Hub_1}}]] — {{Краткий статус и количество связанных заметок}}
-- [[MOC - {{Hub_2}}]] — {{Краткий статус и количество связанных заметок}}
+- [[MOC - {{Hub_1}}]] — {{Brief status and connected note count}}
+- [[MOC - {{Hub_2}}]] — {{Brief status and connected note count}}
 
 ---
 
-## ⚖️ 3. Эволюция взглядов и выявленные конфликты
+## ⚖️ 3. Ideological Evolution & Detected Conflicts
 
-| Тема / Узел | Ранняя позиция (Источник А) | Поздняя позиция (Источник Б) | Анализ сдвига мысли |
+| Concept / Node | Historical Stance (Source A) | Contemporary Stance (Source B) | Epistemic Shift Analysis |
 | :--- | :--- | :--- | :--- |
-| [[{{Concept_Conflict_1}}]] | "{{Тезис_А}}" (*{{Source_A}}*) | "{{Тезис_Б}}" (*{{Source_B}}*) | {{Причина эволюции взглядов автора}} |
+| [[{{Concept_Conflict_1}}]] | "{{Thesis_A}}" (*{{Source_A}}*) | "{{Thesis_B}}" (*{{Source_B}}*) | {{Root cause of the author's viewpoint evolution}} |
 
 ---
 
-## 🕳️ 4. Слепые зоны (Blind Spots & Research Backlog)
+## 🕳️ 4. Blind Spots & Research Backlog
 
-> [!question] Критические пробелы в онтологии
-> 1. **[[{{Missing_Topic_1}}]]**: Упомянут автором вскользь в контексте {{Контекст}}, но механизм не раскрыт.
-> 2. **[[{{Missing_Topic_2}}]]**: Отсутствует экспериментальное подтверждение гипотезы {{Гипотеза}}.
+> [!question] Critical Knowledge Gaps
+> 1. **[[{{Missing_Topic_1}}]]**: Mentioned cursorily in the context of {{Context}}, but the underlying mechanism is unresolved.
+> 2. **[[{{Missing_Topic_2}}]]**: Lacks empirical validation for hypothesis {{Hypothesis}}.
 
 ---
 
-## 🌐 5. Глобальная архитектура связей (Mermaid Macro Graph)
+## 🌐 5. Global Macro Architecture (Mermaid)
 
 ```mermaid
 graph TD
-    subgraph "{{Домен 1}}"
+    subgraph "{{Domain 1}}"
         MOC1["MOC - {{Hub_1}}"]
     end
-    subgraph "{{Домен 2}}"
+    subgraph "{{Domain 2}}"
         MOC2["MOC - {{Hub_2}}"]
     end
-    MOC1 -->|междисциплинарный изоморфизм| MOC2
+    MOC1 -->|cross-domain isomorphism| MOC2
 ```

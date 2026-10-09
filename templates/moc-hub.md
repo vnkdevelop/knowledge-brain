@@ -7,48 +7,49 @@ tags:
   - type/moc
   - status/{{status:sapling|evergreen}}
 created: {{date:YYYY-MM-DD}}
+updated: {{date:YYYY-MM-DD}}
 ---
 
 # 🗺️ MOC: {{topic_title}}
 
-## 🧭 Введение и Контур Темы
-> [!abstract] Обзор хаба
-> {{Краткое описание предметной области, объединяемой данным хабом, и ключевые цели исследования}}
+## 🧭 Overview & Domain Scope
+> [!abstract] Hub Summary
+> {{Concise definition of the subject area united by this hub and core objectives of the inquiry}}
 
 ---
 
-## 📂 Кластеры Знаний
+## 📂 Knowledge Clusters
 
-### 1. Фундаментальные понятия и База
-- [[{{Note_Core_1}}]] — {{Краткая аннотация}}
-- [[{{Note_Core_2}}]] — {{Краткая аннотация}}
+### 1. Foundational Concepts
+- [[{{Note_Core_1}}]] — {{Brief annotation}}
+- [[{{Note_Core_2}}]] — {{Brief annotation}}
 
-### 2. Прикладные модели и Протоколы
-- [[{{Note_Applied_1}}]] — {{Краткая аннотация}}
-- [[{{Note_Applied_2}}]] — {{Краткая аннотация}}
+### 2. Applied Models & Protocols
+- [[{{Note_Applied_1}}]] — {{Brief annotation}}
+- [[{{Note_Applied_2}}]] — {{Brief annotation}}
 
-### 3. Исследовательские гипотезы и Спорные вопросы
-- [[{{Note_Hypothesis_1}}]] — {{Краткая аннотация}}
+### 3. Hypotheses & Open Inquiries
+- [[{{Note_Hypothesis_1}}]] — {{Brief annotation}}
 
 ---
 
-## 📊 Топология Кластера (Cluster Graph)
+## 📊 Cluster Topology (Graph)
 ```mermaid
 mindmap
   root(("{{topic_title}}"))
-    "Базовые основы"
-      "{{Концепт 1}}"
-      "{{Концепт 2}}"
-    "Механизмы"
-      "{{Модель 1}}"
-      "{{Протокол 1}}"
-    "Смежные связи"
-      "{{Междисциплинарный узел}}"
+    "Foundations"
+      "{{Concept 1}}"
+      "{{Concept 2}}"
+    "Mechanisms"
+      "{{Model 1}}"
+      "{{Protocol 1}}"
+    "Cross-Domain"
+      "{{Interdisciplinary Node}}"
 ```
 
 ---
 
-## 🔍 Неисследованные области (Blind Spots)
-> [!question] Точки роста хаба
-> - [ ] {{Вопрос 1, оставшийся без ответа в текущем корпусе заметок}}
-> - [ ] {{Вопрос 2, требующий дальнейшего сбора материалов}}
+## 🔍 Blind Spots & Backlog
+> [!question] Growth Opportunities for this Hub
+> - [ ] {{Unanswered question 1 from current vault materials}}
+> - [ ] {{Unanswered question 2 requiring future inquiry}}

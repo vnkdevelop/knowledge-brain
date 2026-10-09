@@ -1,6 +1,6 @@
 ---
 id: 20261009-MOC-COGNITIVE
-title: "MOC - Когнитивные системы и ИИ"
+title: "MOC - Cognitive Systems and AI"
 type: moc
 tags:
   - domain/ai
@@ -8,50 +8,51 @@ tags:
   - type/moc
   - status/evergreen
 created: 2026-10-09
+updated: 2026-10-09
 ---
 
-# 🗺️ MOC: Когнитивные системы и Вычислительный Интеллект
+# 🗺️ MOC: Cognitive Systems and Computational Intelligence
 
-## 🧭 Введение и Контур Темы
-> [!abstract] Обзор хаба
-> Хаб объединяет записи автора по нейрофизиологии (2018–2020) и современные исследования в области искусственного интеллекта (2023–2026). Основная цель — исследовать изоморфизмы между биологическими вычислительными механизмами и архитектурами глубокого обучения.
-
----
-
-## 📂 Кластеры Знаний
-
-### 1. Биологический субстрат и Пластичность
-- [[Пластичность нейронных сетей (Био vs ИИ)]] — сопоставление локального правила Хебба и глобального Backprop.
-- [[Дофаминергическая система]] — механизм Reward Prediction Error как аналог градиентного шага.
-- [[Spike-Timing-Dependent Plasticity]] — временные паттерны синаптических весов.
-
-### 2. Искусственные Архитектуры
-- [[Алгоритм обратного распространения ошибки]] — математический базис обучения градиентным спуском.
-- [[Трансформеры и Механизм Внимания]] — моделирование динамического фокуса внимания.
-- [[Принцип свободной энергии Карла Фристона]] — обобщающая термодинамическая теория адаптивных систем.
+## 🧭 Overview & Domain Scope
+> [!abstract] Hub Summary
+> This hub consolidates the author's research across neurophysiology (2018–2020) and modern deep learning architectures (2023–2026). The central inquiry is discovering structural isomorphisms between biological brain computation and artificial neural networks.
 
 ---
 
-## 📊 Топология Кластера
+## 📂 Knowledge Clusters
+
+### 1. Biological Substrate & Synaptic Plasticity
+- [[Neural Network Plasticity (Bio vs AI)]] — Hebbian mechanics vs gradient descent backpropagation.
+- [[Dopaminergic System]] — Reward prediction error dynamics as a learning signal.
+- [[Spike-Timing-Dependent Plasticity]] — Millisecond temporal dynamics of synaptic weights.
+
+### 2. Artificial Architectures
+- [[Backpropagation Algorithm]] — Mathematical foundation of optimization in deep networks.
+- [[Attention Mechanism in Transformers]] — Dynamic computational focus modeling.
+- [[Karl Friston Free Energy Principle]] — Unifying thermodynamic framework for adaptive systems.
+
+---
+
+## 📊 Cluster Topology
 ```mermaid
 mindmap
-  root((Когнитивные Системы))
-    Биологический мозг
-      Синаптическая пластичность
-      Дофаминовый контур
-      Энергоэффективность 20W
-    Искусственные сети
+  root((Cognitive Systems))
+    Biological Brain
+      Synaptic Plasticity
+      Dopaminergic Circuit
+      20W Energy Efficiency
+    Artificial Networks
       Backpropagation
-      Трансформеры
-      Оптимизация Loss Landscape
-    Точки конвергенции
-      Принцип свободной энергии
-      Локальное обучение vs Градиенты
+      Transformers
+      Loss Landscape Optimization
+    Convergence Points
+      Free Energy Principle
+      Local Plasticity vs Global Gradients
 ```
 
 ---
 
-## 🔍 Слепые зоны (Research Backlog)
-> [!question] Нерешенные вопросы кластера
-> - [ ] Как биологический мозг решает проблему катастрофического забывания (Catastrophic Forgetting) без полного повторения датасета?
-> - [ ] Возможно ли эффективное аппаратное воплощение STDP на мемристорах в сравнении с GPU?
+## 🔍 Blind Spots & Backlog
+> [!question] Unresolved Questions for this Hub
+> - [ ] How does the biological brain solve Catastrophic Forgetting without complete dataset replay?
+> - [ ] Can neuromorphic hardware with memristors achieve STDP energy efficiency competitive with modern GPU clusters?

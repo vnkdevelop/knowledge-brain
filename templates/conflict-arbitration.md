@@ -1,6 +1,6 @@
 ---
 id: {{date:YYYYMMDD}}-CONFLICT-{{TOPIC}}
-title: "Арбитраж: {{topic_conflict}}"
+title: "Arbitration: {{topic_conflict}}"
 type: insight
 tags:
   - domain/{{domain}}
@@ -12,35 +12,35 @@ sources:
 created: {{date:YYYY-MM-DD}}
 ---
 
-# ⚖️ Арбитраж противоречия: {{topic_conflict}}
+# ⚖️ Conflict Arbitration: {{topic_conflict}}
 
-## ⚔️ Стороны противоречия
+## ⚔️ Contradictory Positions
 
-### Позиция 1 (Ранняя мысль)
-* **Источник:** [[{{source_note_early}}]] ({{date_early}})
-* **Тезис:**
-> [!quote] Цитата оригинала (Ранняя)
+### Position 1 (Historical Thought)
+* **Source:** [[{{source_note_early}}]] ({{date_early}})
+* **Assertion:**
+> [!quote] Source Quote (Historical)
 > "{{early_quote}}"
 
-### Позиция 2 (Поздняя мысль)
-* **Источник:** [[{{source_note_late}}]] ({{date_late}})
-* **Тезис:**
-> [!quote] Цитата оригинала (Поздняя)
+### Position 2 (Contemporary Thought)
+* **Source:** [[{{source_note_late}}]] ({{date_late}})
+* **Assertion:**
+> [!quote] Source Quote (Contemporary)
 > "{{late_quote}}"
 
 ---
 
-## 🔬 Анализ Архитектора (Диалектический синтез)
+## 🔬 Dialectical Synthesis
 
-> [!warning] Причина противоречия
-> {{Анализ смены парадигмы: сменились вводные данные, произошел переход от наивного представления к зрелому, либо изменился контекст применения}}
+> [!warning] Root Cause of Conflict
+> {{Analysis of the paradigm shift: updated data, transition from naive heuristic to mature model, or divergent boundary conditions}}
 
-> [!synthesis] Интегрированный вывод
-> {{Синтезирующий вывод, устраняющий кажущееся противоречие или фиксирующий границы применимости обеих моделей}}
+> [!synthesis] Integrated Model
+> {{Synthesizing conclusion resolving the apparent contradiction and mapping boundary conditions for both views}}
 
 ```mermaid
 graph LR
-    A["Позиция А ({{date_early}})"] -->|Столкновение с практикой / данными| B["Точка сомнения"]
-    B --> C["Позиция Б ({{date_late}})"]
-    C --> D{"Синтезированная модель"}
+    A["Position A ({{date_early}})"] -->|Encounter with Empirical Evidence| B["Point of Tension"]
+    B --> C["Position B ({{date_late}})"]
+    C --> D{"Synthesized Model"}
 ```
