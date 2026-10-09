@@ -35,7 +35,9 @@ updated: {{date:YYYY-MM-DD}}
 > [!synthesis] Interdisciplinary Synthesis
 > {{Cross-domain parallels, implications, and non-obvious hypotheses}}
 
-## 🔗 Cross-Domain Links
+## 🔗 Associated & Cross-Domain Links
+- **Prerequisite (Requires):** [[{{Prerequisite_Note}}]] <!-- Selective: include only if this concept strictly requires another as prior foundation -->
+- **Contradicts:** [[{{Conflicting_Note}}]] <!-- Selective: include only if directly in theoretical opposition -->
 - **Related Concepts:** [[{{Related_Note_1}}]], [[{{Related_Note_2}}]]
 - **Cross-Domain Analogy:** [[{{Cross_Domain_Concept}}]] (brief explanation of the structural isomorphism)
 - **Hub:** [[MOC - {{Hub_Name}}]]

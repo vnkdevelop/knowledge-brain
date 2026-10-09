@@ -45,6 +45,7 @@ Unlike generic note summary tools, Knowledge Brain operates as a **systems analy
 | 🤖 **Transparent AI Enrichment** | All machine deductions and syntheses are isolated within dedicated callout containers (`> [!ai-insight]`, `> [!synthesis]`). |
 | 📊 **Visual Schematics (Mermaid + Prompts)** | Native Mermaid graphs inside notes + production-ready prompts for Midjourney v6 / Flux.1 image generation. |
 | 🔄 **Continuous Vault Evolution** | Seamlessly merges new batches into existing vaults without regressions, duplicating concepts, or breaking links. |
+| 🔗 **Selective Epistemic Linking** | High-signal relation markers (`Requires:`, `Contradicts:`) applied selectively only where genuine dependencies exist, preserving clean associative links by default. |
 | 🏠 **Meta-Sync Dashboards** | Concludes each session with an executive `Dashboard_Vault_Sync` summarizing clusters, blind spots, and graph topology. |
 
 ---

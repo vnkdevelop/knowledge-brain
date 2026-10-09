@@ -38,7 +38,8 @@ Biological synapses modulate connection strength based on coordinated activity b
 > [!synthesis] Interdisciplinary Synthesis
 > Correlating the 2018 notes on dopamine with the 2024 notes on transformer loss functions: the loss function in deep learning is mathematically equivalent to homeostatic "discomfort" minimization under Karl Friston's Free Energy Principle.
 
-## 🔗 Cross-Domain Links
+## 🔗 Associated & Cross-Domain Links
+- **Prerequisite (Requires):** [[Synaptic Transmission]]
 - **Related Concepts:** [[Hebbian Learning]], [[Backpropagation Algorithm]], [[Dopaminergic System]]
 - **Cross-Domain Analogy:** [[Market Price Adaptation in Economics]] (decentralized local agent adaptation without a global coordinator)
 - **Hub:** [[MOC - Cognitive Systems and AI]]

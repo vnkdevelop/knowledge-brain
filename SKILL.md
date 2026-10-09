@@ -140,6 +140,12 @@ Strive to **autonomously deduce the domain/subject of each knowledge block** usi
 ### STAGE 3: Cross-Domain Synthesis & Network Linking
 
 * **Bidirectional `[[WikiLinks]]`:** In-text references. When referencing a fundamental concept that lacks a dedicated file, create a stub note with status `🌱 seed`.
+* **Selective Epistemic Edge Typing (Selective / Sparse Usage):**
+  - **Associative Links by Default:** Most Zettelkasten connections must remain clean, natural associative `[[WikiLinks]]` (`- **Related Concepts:** [[Concept A]], [[Concept B]]`).
+  - **Selective Typing (High-Signal Only):** Do **NOT** force typed relations onto every note. Only when a genuine functional dependency, paradigm clash, or cross-domain isomorphism exists, explicitly designate the link:
+    - `- **Prerequisite (Requires):** [[Concept]]` — use strictly when understanding this note fundamentally demands prior mastery of another.
+    - `- **Contradicts:** [[Concept]]` — use strictly when two models or notes are in direct theoretical opposition.
+    - `- **Cross-Domain Analogy (IsomorphicTo):** [[Concept]]` — use strictly when a profound structural mirror exists in a different discipline.
 * **Maps of Content (MOC):** Master hubs (e.g., `[[MOC - Cognitive Systems and AI]]`) organizing atomic clusters into intuitive reading paths.
 * **Paradoxes & Evolution Tracking:**
   - If the author claimed X in 2018 and contradicted it with Y in 2024, do not smooth it out. Document the paradigm shift:
@@ -304,7 +310,8 @@ Biological synapses modulate synaptic weight based on pre- and post-synaptic spi
 > [!synthesis] Interdisciplinary Synthesis
 > Correlating the 2018 notes on dopamine with the 2024 notes on loss functions: the loss function can be conceptualized mathematically as the formal minimization of homeostatic "discomfort" under Karl Friston's Free Energy Principle.
 
-## 🔗 Cross-Domain Links
+## 🔗 Associated & Cross-Domain Links
+- **Prerequisite (Requires):** [[Synaptic Transmission]] *(selective: only if strictly required)*
 - **Related Concepts:** [[Hebbian Learning]], [[Backpropagation Algorithm]], [[Dopaminergic System]]
 - **Cross-Domain Analogy:** [[Market Price Adaptation in Economics]] (decentralized local agent adaptation without a global planner)
 - **Hub:** [[MOC - Cognitive Systems and AI]]
