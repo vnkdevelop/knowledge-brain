@@ -46,7 +46,8 @@ Unlike generic note summary tools, Knowledge Brain operates as a **systems analy
 | 📊 **Visual Schematics (Mermaid + Prompts)** | Native Mermaid graphs inside notes + production-ready prompts for Midjourney v6 / Flux.1 image generation. |
 | 🔄 **Continuous Vault Evolution** | Seamlessly merges new batches into existing vaults without regressions, duplicating concepts, or breaking links. |
 | 🔗 **Selective Epistemic Linking** | High-signal relation markers (`Requires:`, `Contradicts:`) applied selectively only where genuine dependencies exist, preserving clean associative links by default. |
-| 🏠 **Meta-Sync Dashboards** | Concludes each session with an executive `Dashboard_Vault_Sync` summarizing clusters, blind spots, and graph topology. |
+| 🧹 **Pure Graph Architecture** | Zero vault pollution. Sync summaries and blind-spot audits are delivered directly in chat, preventing administrative notes from cluttering Obsidian's visual Graph View. |
+| 🛑 **Interactive Stop-Gate** | Mandatory Turn-1 interview. The agent halts execution after payload triage to align on subject domains and user preferences before creating any files. |
 
 ---
 
@@ -54,17 +55,16 @@ Unlike generic note summary tools, Knowledge Brain operates as a **systems analy
 
 ```mermaid
 flowchart TD
-    Chaos["📥 Raw Ingestion Chaos (photos, scans, notes, audio, code)"] --> Stage0["0️⃣ Rapid Triage & Calibration"]
-    Stage0 --> Disambig{"Ambiguous Domain?"}
-    Disambig -- Yes --> Clarify["Targeted Disambiguation (Batch Query)"] --> Stage1
-    Disambig -- No --> Stage1["1️⃣ Decryption, Multimodal OCR & Normalization"]
+    Chaos["📥 Raw Ingestion Chaos (photos, scans, notes, audio, code)"] --> Stage0["0️⃣ Rapid Triage & Mandatory Interview"]
+    Stage0 --> UserConfirm{"User Validation"}
+    UserConfirm --> Stage1["1️⃣ Decryption, Multimodal OCR & Normalization"]
     
     Stage1 --> Stage2["2️⃣ Atomization (< 500 words) & Taxonomy"]
     Stage2 --> Stage3["3️⃣ Network Linking ([[WikiLinks]] + MOC Hubs)"]
     Stage3 --> Stage4["4️⃣ AI Enrichment (Callouts + Mermaid + Prompts)"]
     
     Stage4 --> Mode{"Execution Mode"}
-    Mode -- Fresh Vault --> Stage5["5️⃣ Generate Dashboard_Vault_Sync"]
+    Mode -- Fresh Vault --> Stage5["5️⃣ In-Chat Executive Report (Pure Graph)"]
     Mode -- Existing Vault --> Incremental["🔄 Zero-Breakage Merge: Graduate Seeds + Wire MOCs"] --> Stage5
 ```
 
