@@ -47,7 +47,7 @@ Unlike generic note summary tools, Knowledge Brain operates as a **systems analy
 | 🔄 **Continuous Vault Evolution** | Seamlessly merges new batches into existing vaults without regressions, duplicating concepts, or breaking links. |
 | 🔗 **Selective Epistemic Linking** | High-signal relation markers (`Requires:`, `Contradicts:`) applied selectively only where genuine dependencies exist, preserving clean associative links by default. |
 | 🧹 **Pure Graph Architecture** | Zero vault pollution. Sync summaries and blind-spot audits are delivered directly in chat, preventing administrative notes from cluttering Obsidian's visual Graph View. |
-| 🛑 **Interactive Stop-Gate** | Mandatory Turn-1 interview. The agent halts execution after payload triage to align on subject domains and user preferences before creating any files. |
+| 🛑 **Interactive Stop-Gate & Subject Clarification** | Mandatory Turn-1 interview. The agent halts execution after payload triage and explicitly clarifies the exact subject/discipline name for any uncertain knowledge block before creating any vault files. |
 
 ---
 

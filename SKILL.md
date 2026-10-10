@@ -83,18 +83,24 @@ The agent MUST perform a preliminary payload inventory, propose subject/domain c
    
    Identified 42 pre-existing notes and 3 MOC hubs in the target vault.
    ```
-4. **Mandatory Subject & Domain Alignment (Active User Check):**
-   Present proposed subject clusters to the user for validation:
-   ```text
-   🎯 Proposed Subject & Domain Clusters:
-   1. [Neurobiology & Synaptic Plasticity] (files: note_01.jpg .. note_06.jpg)
-   2. [Deep Learning & Optimization] (files: note_07.md .. note_10.md)
-   3. [Distributed Systems & Network Protocols] (files: config_01.json, script_02.py)
+4. **Mandatory Subject & Domain Alignment (Targeted Clarification on Uncertainty):**
+   The agent MUST inspect every detected cluster. If the agent is **not completely certain** what discipline, academic field, or subject a specific block of knowledge belongs to:
+   * **STRICTLY FORBIDDEN:** Silently guessing, assuming, or fabricating domain taxonomies (`#domain/...`) for ambiguous materials.
+   * **MANDATORY BLOCK-BY-BLOCK INQUIRY:** Pinpoint each uncertain block, list the involved files, suggest plausible candidate domains, and ask the user for the exact subject name:
    
-   👉 Questions for you:
-   • Do you agree with these subject classifications, or should any be renamed, merged, or split?
-   • If any borderline files belong to a specific project or topic, please let me know.
+   ```text
+   🎯 Предварительные предметные кластеры:
+   1. [Нейробиология и пластичность] (Уверенность: Высокая) — файлы: note_01.jpg .. note_06.jpg
+   2. [Глубокое обучение и оптимизация] (Уверенность: Высокая) — файлы: note_07.md .. note_10.md
+   
+   ⚠️ Уточнение названий предметов по сомнительным блокам (Uncertain Blocks):
+   • Блок 3 (файлы: draft_03.txt, scan_04.jpg): Заметки балансируют на стыке нескольких дисциплин. К какому конкретно предмету вы относите этот блок знаний?
+     - Вариант А: [Когнитивная психология]
+     - Вариант Б: [UX и Геймдизайн]
+     - Либо напишите ваше собственное название предмета: ________
+   • Блок 4 (файл: memo_09.md про 'Архитектуру агентов'): Это [Системное мышление], [AI-инженерия] или [Личная продуктивность]?
    ```
+   The agent MUST wait for the user to confirm or provide the exact subject title before generating notes, MOC hubs, or assigning `#domain/...` tags.
 
 5. **Mandatory Calibration Questions:**
    The agent MUST present the calibration questions and wait for the user's input:
@@ -412,6 +418,7 @@ mindmap
 7. **Atomicity Principle:** Maximum 500 words per note. If an idea exceeds this boundary, decompose it into faceted notes connected via a local MOC.
 8. **Transparent AI Intervention:** The user must instantly distinguish personal thoughts from machine analysis via dedicated callouts.
 9. **Zero Breakage Guarantee:** Never wipe or corrupt existing data during incremental updates. Prioritize appending, linking, and non-destructive wiring.
+10. **Targeted Subject Clarification on Uncertainty:** If the agent has any doubt or uncertainty about which subject or discipline a specific knowledge block belongs to, it is STRICTLY FORBIDDEN to guess or assign arbitrary domain tags. The agent MUST isolate that specific block and explicitly ask the user for the exact subject name during Stage 0.
 
 ---
 
